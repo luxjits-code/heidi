@@ -48,6 +48,7 @@
   /* ---------- Active nav link ---------- */
   const links = [...document.querySelectorAll(".nav a")];
   const sections = links.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  sections.unshift(document.getElementById("home")); // nothing is highlighted while on the cover
   if ("IntersectionObserver" in window) {
     const navIO = new IntersectionObserver((entries) => {
       entries.forEach(e => {
