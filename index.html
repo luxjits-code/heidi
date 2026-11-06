@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heidi</title>
+  <meta name="description" content="Heidi — a personal introduction.">
+  <!-- Keep the site out of search engines. Delete this line if you'd like it to be findable. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+  HOW TO ADD YOUR PHOTOGRAPHS
+  Each photo spot looks like this:
+      <figure class="photo ratio-4x5"> <div class="ph">...</div> </figure>
+  Replace the whole <div class="ph">…</div> with an image, e.g.
+      <img src="images/portrait.jpg" alt="Heidi by the window">
+  The image fills and crops itself to the frame automatically.
+  Ratios available: ratio-4x5, ratio-3x4, ratio-2x3, ratio-1x1, ratio-3x2, ratio-16x9
+-->
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <a class="wordmark" href="#home">Heidi</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#particulars">Particulars</a>
+    <a href="#favorites">Favorites</a>
+    <a href="#invitation" class="nav-cta">An Invitation</a>
+  </nav>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <nav aria-label="Mobile">
+    <a href="#about"><em>i.</em> About Me</a>
+    <a href="#gallery"><em>ii.</em> Gallery</a>
+    <a href="#particulars"><em>iii.</em> A Few Particulars</a>
+    <a href="#favorites"><em>iv.</em> Playing Favorites</a>
+    <a href="#invitation"><em>v.</em> An Invitation</a>
+  </nav>
+</div>
+
+<main id="main">
+
+  <!-- ============ 1. HOME ============ -->
+  <section class="hero" id="home">
+    <figure class="photo hero-photo">
+      <div class="ph"><span class="ph-label">Photograph</span><span class="ph-note">Hero portrait · tall, 4:5 or 3:4<br>soft window light, looking just past the camera</span></div>
+    </figure>
+    <div class="hero-text">
+      <p class="eyebrow reveal">A personal introduction</p>
+      <h1 class="hero-name reveal">Heidi</h1>
+      <p class="tagline reveal"><em>Lorem ipsum dolor sit amet — a slow afternoon, a long letter, a light left on for someone.</em></p>
+      <a class="scroll-cue reveal" href="#about">Begin <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+
+  <!-- ============ 2. ABOUT ============ -->
+  <section class="section about" id="about">
+    <header class="section-head reveal">
+      <span class="numeral">i.</span>
+      <h2>About Me</h2>
+    </header>
+
+    <div class="about-grid">
+      <div class="about-lead reveal">
+        <p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus, posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum, and donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p>Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor, etiam porta sem malesuada magna mollis euismod.</p>
+      </div>
+      <figure class="photo ratio-3x4 about-photo-a reveal">
+        <div class="ph"><span class="ph-label">Photograph</span><span class="ph-note">About · candid, 3:4</span></div>
+        <figcaption>Lorem ipsum, autumn.</figcaption>
+      </figure>
+    </div>
+
+    <blockquote class="pull reveal">
+      <p>“Lorem ipsum dolor sit amet, consectetur adipiscing — sed do eiusmod tempor.”</p>
+    </blockquote>
+
+    <div class="about-grid reverse">
+      <figure class="photo ratio-4x5 about-photo-b reveal">
+        <div class="ph"><span class="ph-label">Photograph</span><span class="ph-note">About · detail or half-portrait, 4:5</span></div>
+        <figcaption>Nulla vitae elit libero.</figcaption>
+      </figure>
+      <div class="about-body reveal">
+        <p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis.</p>
+        <p class="signoff"><em>— Heidi</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <header class="section-head reveal">
+      <span class="numeral">ii.</span>
+      <h2>Gallery</h2>
+    </header>
+
+    <div class="gallery-grid">
+      <figure class="photo g-wide ratio-3x2 reveal" tabindex="0">
+        <div class="ph"><span class="ph-label">Photograph 01</span><span class="ph-note">Landscape, 3:2 · full width</span></div>
+      </figure>
+      <figure class="photo g-tall ratio-2x3 reveal" tabindex="0">
+        <div class="ph"><span class="ph-label">Photograph 02</span><span class="ph-note">Portrait, 2:3</span></div>
+      </figure>
+      <figure class="photo g-tall offset ratio-4x5 reveal" tabindex="0">
+        <div class="ph"><span class="ph-label">Photograph 03</span><span class="ph-note">Portrait, 4:5</span></div>
+      </figure>
+      <figure class="photo g-narrow ratio-1x1 reveal" tabindex="0">
+        <div class="ph"><span class="ph-label">Photograph 04</span><span class="ph-note">Square, 1:1</span></div>
+      </figure>
+      <figure class="photo g-broad ratio-3x2 reveal" tabindex="0">
+        <div class="ph"><span class="ph-label">Photograph 05</span><span class="ph-note">Landscape, 3:2</span></div>
+      </figure>
+      <figure class="photo g-solo ratio-3x4 reveal" tabindex="0">
+        <div class="ph"><span class="ph-label">Photograph 06</span><span class="ph-note">Portrait, 3:4 · centered</span></div>
+        <figcaption>Lorem ipsum dolor, somewhere quiet.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 4. PARTICULARS ============ -->
+  <section class="section particulars" id="particulars">
+    <div class="split">
+      <figure class="photo ratio-3x4 split-photo reveal">
+        <div class="ph"><span class="ph-label">Photograph</span><span class="ph-note">Particulars · 3:4</span></div>
+      </figure>
+      <div class="split-text">
+        <header class="section-head left reveal">
+          <span class="numeral">iii.</span>
+          <h2>A Few Particulars</h2>
+        </header>
+        <dl class="facts reveal">
+          <div><dt>Age</dt><dd>Lorem ipsum</dd></div>
+          <div><dt>Height</dt><dd>Lorem ipsum</dd></div>
+          <div><dt>Home</dt><dd>Lorem ipsum dolor sit amet</dd></div>
+          <div><dt>Occupation</dt><dd>Consectetur adipiscing elit</dd></div>
+          <div><dt>Education</dt><dd>Sed do eiusmod tempor</dd></div>
+          <div><dt>Languages</dt><dd>Lorem, ipsum, and a little dolor</dd></div>
+          <div><dt>Looking for</dt><dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. FAVORITES ============ -->
+  <section class="section favorites" id="favorites">
+    <header class="section-head reveal">
+      <span class="numeral">iv.</span>
+      <h2>Playing Favorites</h2>
+      <p class="section-sub"><em>An incomplete and entirely biased list.</em></p>
+    </header>
+
+    <div class="fav-grid">
+      <article class="fav reveal">
+        <h3>On the bookshelf</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus.</p>
+      </article>
+      <article class="fav reveal">
+        <h3>At the table</h3>
+        <p>Vestibulum id ligula porta felis euismod semper, maecenas sed diam eget risus.</p>
+      </article>
+      <article class="fav reveal">
+        <h3>Music, late</h3>
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla.</p>
+      </article>
+      <article class="fav reveal">
+        <h3>A perfect Sunday</h3>
+        <p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
+      </article>
+      <article class="fav reveal">
+        <h3>Places I return to</h3>
+        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna.</p>
+      </article>
+      <article class="fav reveal">
+        <h3>Films</h3>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      </article>
+    </div>
+
+    <div class="memories">
+      <figure class="photo ratio-16x9 memories-photo reveal">
+        <div class="ph"><span class="ph-label">Photograph</span><span class="ph-note">A favorite memory · wide, 16:9</span></div>
+      </figure>
+      <div class="memories-text reveal">
+        <h3>Favorite experiences</h3>
+        <ol class="roman">
+          <li>Lorem ipsum dolor sit amet under a summer storm.</li>
+          <li>Consectetur adipiscing elit on an overnight train.</li>
+          <li>Sed do eiusmod tempor, the best meal of my life.</li>
+          <li>Ut enim ad minim veniam at the edge of the sea.</li>
+        </ol>
+      </div>
+    </div>
+
+    <aside class="eccentricities reveal">
+      <h3>Small eccentricities</h3>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Sed do eiusmod tempor</li>
+        <li>Incididunt ut labore</li>
+        <li>Et dolore magna aliqua</li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- ============ 6. INVITATION ============ -->
+  <section class="section invitation" id="invitation">
+    <header class="section-head reveal">
+      <span class="numeral">v.</span>
+      <h2>An Invitation</h2>
+    </header>
+
+    <div class="invite-letter reveal">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. If something here made you smile, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam — tell me a little about yourself, and perhaps where you'd take me for coffee.</p>
+    </div>
+
+    <!--
+      This form needs no server: on submit it opens the visitor's email app
+      with the note pre-written. Change the address in script.js (CONTACT_EMAIL)
+      and in the plain link below.
+    -->
+    <form class="invite-form reveal" id="invite-form" novalidate>
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-email">Your email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field full">
+        <label for="f-note">A note</label>
+        <textarea id="f-note" name="note" rows="5" required placeholder="Lorem ipsum…"></textarea>
+      </div>
+      <div class="form-foot full">
+        <button type="submit" class="btn">Send a note</button>
+        <p class="form-alt">or write directly to <a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+      <p class="form-status full" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="footer-name">Heidi</p>
+  <p class="footer-line"><em>Lorem ipsum dolor sit amet.</em></p>
+  <a href="#home" class="to-top">Back to top ↑</a>
+</footer>
+
+<!-- Lightbox for the gallery -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous">←</button>
+  <div class="lb-stage"></div>
+  <button class="lb-next" aria-label="Next">→</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
